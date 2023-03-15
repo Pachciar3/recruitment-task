@@ -5,7 +5,7 @@ import { ResponseData } from "../../api/getSingleSearch/Response";
 export default function Search() {
   const [data, setData] = useState<undefined | ResponseData>(undefined);
   useEffect(() => {
-    getSingleSearchResponse("a")
+    getSingleSearchResponse("1")
       .then((data) => {
         setData(data);
       })
