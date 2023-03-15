@@ -1,24 +1,19 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import reactLogo from "./assets/react.svg";
+import "./App.css";
+import Counter from "./components/Counter/Counter";
+import Search from "./components/Search";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
+      <div>
+        <a href="https://reactjs.org" target="_blank" rel="noreferrer">
+          <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
-      </header>
+      </div>
+      <h1>React</h1>
+      <Counter /> <Search />
+      <p className="read-the-docs">Click on the React logos to learn more</p>
     </div>
   );
 }
